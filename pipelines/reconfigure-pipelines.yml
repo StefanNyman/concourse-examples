@@ -23,3 +23,7 @@ jobs:
         file: concourse-examples/pipelines/hello-world.yml
       - set_pipeline: time-triggered
         file: concourse-examples/pipelines/time-triggered.yml
+        instance_vars:
+          first: the-third
+          number: "6000"
+          hello: there
